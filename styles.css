@@ -1,0 +1,77 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para o formulário */
+form {
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button.bu {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.bu:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para as imagens */
+.background-image,
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100vh; /* Definindo a altura máxima como a altura da tela */
+    object-fit: cover;
+    z-index: -1; /* Para enviar as imagens para o fundo */
+}
+
+.overlay-image {
+    opacity: 0.5; /* Ajuste a opacidade conforme desejado */
+}
+
+/* Estilos para o título */
+.ab {
+    margin-top: 0;
+}
+
+/* Estilos para o verso da Bíblia */
+#bibleVerse {
+    font-style: italic;
+    color: #666;
+}

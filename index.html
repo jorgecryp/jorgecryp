@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Bíblia Sagrada</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="ab">A Bíblia Sagrada</h1>
+        <div id="bibleVerse"></div>
+        <form>
+            <div>
+                
+                <input type="Livro" id="livro" name="livro" list="livros">
+                <datalist id="livros">
+                    <!-- Lista de nomes dos livros da Bíblia -->
+                    <option value="Gênesis">
+                    <option value="Êxodo">
+                    <option value="Levítico">
+                    <option value="Números">
+                    <option value="Deuteronômio">
+                    <!-- Pentateuco -->
+                    <option value="Josué">
+                    <option value="Juízes">
+                    <option value="Rute">
+                    <option value="1 Samuel">
+                    <option value="2 Samuel">
+                    <option value="1 Reis">
+                    <option value="2 Reis">
+                    <option value="1 Crônicas">
+                    <option value="2 Crônicas">
+                    <!-- Históricos -->
+                    <option value="Esdras">
+                    <option value="Neemias">
+                    <option value="Ester">
+                    <!-- Poéticos -->
+                    <option value="Jó">
+                    <option value="Salmos">
+                    <option value="Provérbios">
+                    <option value="Eclesiastes">
+                    <option value="Cânticos">
+                    <!-- Profetas Maiores -->
+                    <option value="Isaías">
+                    <option value="Jeremias">
+                    <option value="Lamentações">
+                    <option value="Ezequiel">
+                    <option value="Daniel">
+                    <!-- Profetas Menores -->
+                    <option value="Oséias">
+                    <option value="Joel">
+                    <option value="Amós">
+                    <option value="Obadias">
+                    <option value="Jonas">
+                    <option value="Miquéias">
+                    <option value="Naum">
+                    <option value="Habacuque">
+                    <option value="Sofonias">
+                    <option value="Ageu">
+                    <option value="Zacarias">
+                    <option value="Malaquias">
+                    <!-- Novo Testamento -->
+                    <option value="Mateus">
+                    <option value="Marcos">
+                    <option value="Lucas">
+                    <option value="João">
+                    <option value="Atos">
+                    <!-- Evangelhos e Atos -->
+                    <option value="Romanos">
+                    <option value="1 Coríntios">
+                    <option value="2 Coríntios">
+                    <option value="Gálatas">
+                    <option value="Efésios">
+                    <option value="Filipenses">
+                    <option value="Colossenses">
+                    <option value="1 Tessalonicenses">
+                    <option value="2 Tessalonicenses">
+                    <option value="1 Timóteo">
+                    <option value="2 Timóteo">
+                    <option value="Tito">
+                    <option value="Filemom">
+                    <option value="Hebreus">
+                    <!-- Epístolas Paulinas -->
+                    <option value="Tiago">
+                    <option value="1 Pedro">
+                    <option value="2 Pedro">
+                    <option value="1 João">
+                    <option value="2 João">
+                    <option value="3 João">
+                    <option value="Judas">
+                    <option value="Apocalipse">
+                    <!-- Gerais -->
+                </datalist>
+            </div>
+            <div>
+                <label for="versiculo">Versículo:</label>
+                <input type="text" id="versiculo" name="versiculo">
+            </div>
+            <div>
+                <label for="capitulo">Capítulo:</label>
+                <input type="text" id="capitulo" name="capitulo">
+            </div>
+            <button type="button" class="bu">Buscar</button>
+        </form>
+    </div>
+
+    <img src="photo.jpg" class="background-image" alt="Imagem de Fundo">
+    <img src="28.jpg" class="overlay-image" alt="Imagem Sobreposta">
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

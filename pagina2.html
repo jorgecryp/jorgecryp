@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da Bíblia</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-size: 18px; /* Aumentando o tamanho base das letras */
+        }
+
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover; /* Ajuste para cobrir toda a tela */
+        }
+
+        .result-container {
+            padding: 20px;
+            color: rgb(10, 0, 0);
+            position: relative; /* Adicionado para garantir que o conteúdo seja exibido sobre a imagem de fundo */
+            z-index: 1; /* Garante que o conteúdo seja exibido acima da imagem de fundo */
+        }
+
+        .result-container p {
+            font-size: 1.4em; /* Aumentando o tamanho da fonte para os parágrafos */
+            margin-bottom: 20px; /* Adicionando mais espaço entre os parágrafos */
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://source.unsplash.com/1600x900/?landscape" class="background-image" alt="Imagem de Fundo">
+    <div class="result-container">
+        <h2>Resultado da Busca</h2>
+        <div id="bibleVerse"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Extrair parâmetros da URL
+            var urlParams = new URLSearchParams(window.location.search);
+            var livro = urlParams.get('livro');
+            var versiculo = urlParams.get('versiculo');
+            var capitulo = urlParams.get('capitulo');
+
+            // Exibir informações na página
+            var bibleVerseContainer = document.getElementById("bibleVerse");
+            bibleVerseContainer.innerHTML = `
+                <p>Livro: ${livro}</p>
+                <p>Versículo: ${versiculo}</p>
+                <p>Capítulo: ${capitulo}</p>
+            `;
+        });
+    </script>
+</body>
+
+</html>
